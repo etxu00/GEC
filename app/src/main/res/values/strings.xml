@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GGEC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="testAddDriver">Agregar un conductor</string>
+    <string name="testAddTruck">Agregar camión</string>
+    <string name="testLandingDashborad">INICIO</string>
+    <string name="nameUser">Nombre del Usuraio</string>
+    <string name="item1_menu">Gastos</string>
+    <string name="titleReports">Reportes</string>
+    <string name="optionReportDrive">Conductor</string>
+    <string name="optionReportWeek">Semana</string>
+    <string name="optionReportMonth">Mes</string>
+    <string name="titleManagement">Gestión</string>
+    <string name="addDrive">Agregar conductor</string>
+    <string name="addTruck">Agregar camión</string>
+    <string name="associateTruck">Asociar camión/conductor</string>
+    <string name="titleCardExpenses">Egresos del mes</string>
+    <string name="titleCardReturn">Ganancia total</string>
+</resources>

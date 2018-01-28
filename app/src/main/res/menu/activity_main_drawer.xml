@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_history"
+            android:title="@string/item1_menu" />
+    </group>
+
+    <item android:title="@string/titleManagement">
+        <menu>
+            <item
+                android:id="@+id/optionAddTruck"
+                android:icon="@drawable/ic_truck"
+                android:title="@string/addTruck" />
+            <item
+                android:id="@+id/optionAddDrive"
+                android:icon="@drawable/ic_person_add"
+                android:title="@string/addDrive" />
+            <item
+                android:id="@+id/optionAssociateTruck"
+                android:icon="@drawable/ic_associate"
+                android:title="@string/associateTruck" />
+        </menu>
+    </item>
+
+    <item android:title="@string/titleReports">
+        <menu>
+            <item
+                android:id="@+id/optionReportMonth"
+                android:icon="@drawable/ic_date_month"
+                android:title="@string/optionReportMonth" />
+            <item
+                android:id="@+id/optionReportWeek"
+                android:icon="@drawable/ic_date"
+                android:title="@string/optionReportWeek" />
+            <item
+                android:id="@+id/optionReportDrive"
+                android:icon="@drawable/ic_drive"
+                android:title="@string/optionReportDrive" />
+        </menu>
+    </item>
+
+</menu>
