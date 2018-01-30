@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@android:color/white"
     tools:context="com.example.etxu_pc_windows.ggec.fragments.LandingDashboard">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,113 +11,335 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:layout_marginTop="62dp"
             android:layout_gravity="center"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
-                android:layout_margin="16dp"
+            <TextView
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="26dp"
+                android:padding="4dp"
+                android:textSize="16sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:text="Martes 30 de enero del 201/"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp">
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ingreso" />
 
                     <LinearLayout
                         android:background="@drawable/bg_card"
-                        android:gravity="center"
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="-40dp"
+                        android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/example"/>
-
-                        <LinearLayout
-                            android:orientation="horizontal"
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/titleCardExpenses"
+                            android:textColor="@color/textDashboard" />
 
-                            <LinearLayout
-                                android:orientation="vertical"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:gravity="right"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="@string/titleCardExpenses" />
-
-                                <TextView
-                                    android:textColor="@color/colorPrimary"
-                                    android:gravity="right"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:textSize="40sp"
-                                    android:text="$ 1,500.00" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="$ 15,325.20"
+                            android:textColor="@color/textDashboard"
+                            android:textSize="40sp" />
 
                     </LinearLayout>
 
-                    <TextView
-                        android:drawableLeft="@drawable/ic_history"
-                        android:layout_marginTop="24dp"
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Últimos 5 movimientos"/>
-
                 </LinearLayout>
 
-                <!--
-                <ExpandableListView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Ultimos 5 movimientos"/>
-                </ExpandableListView>
-                -->
-
-            </android.support.v7.widget.CardView>
-
-            <LinearLayout
-                android:background="@android:color/white"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_margin="16dp"
-                android:layout_height="wrap_content">
-
                 <TextView
-                    android:padding="16dp"
-                    android:gravity="right"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/titleCardReturn" />
-
-                <TextView
-                    android:textColor="@color/colorPrimary"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:layout_width="match_parent"
+                    android:textColor="@android:color/white"
+                    android:background="@color/green"
                     android:layout_height="match_parent"
-                    android:textSize="40sp"
-                    android:text="$ 1,500.00" />
+                    android:padding="2dp"
+                    android:text="Últimos 5 movimientos:"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow android:background="#c5e8e2">
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow android:background="#c5e8e2">
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                </TableLayout>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/egreso" />
+
+                    <LinearLayout
+                        android:background="@drawable/bg_card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="-40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/titleCardExpenses"
+                            android:textColor="@color/textDashboard" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="$ 9,112.70"
+                            android:textColor="@color/textDashboard"
+                            android:textSize="40sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@color/yellow"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Últimos 5 movimientos:"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow android:background="#f9eab3">
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow android:background="#f9eab3">
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="$5,000.00" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="Viaje a Saltillo" />
+
+                        <TextView
+                            android:gravity="right"
+                            android:padding="3dip"
+                            android:text="29/01/2018" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 

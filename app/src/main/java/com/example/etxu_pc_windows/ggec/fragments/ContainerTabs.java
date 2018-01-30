@@ -127,8 +127,8 @@ public class ContainerTabs extends Fragment {
     private void createViewPager(ViewPager viewPager) {
         SectionsAdapter adapter = new SectionsAdapter(getFragmentManager());
         adapter.addFragment(new LandingDashboard(), "Resumen");
-        adapter.addFragment(new AddDriver(), "Dos");
-        adapter.addFragment(new AddTruck(), "Tres");
+        adapter.addFragment(new AddDriver(), "Historial");
+        adapter.addFragment(new AddTruck(), "Calendario");
 
         viewPager.setAdapter(adapter);
     }

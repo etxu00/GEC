@@ -21,6 +21,9 @@
     <string name="addDrive">Agregar conductor</string>
     <string name="addTruck">Agregar camión</string>
     <string name="associateTruck">Asociar camión/conductor</string>
-    <string name="titleCardExpenses">Egresos del mes</string>
+    <string name="titleCardExpenses">Ingresos del mes:</string>
     <string name="titleCardReturn">Ganancia total</string>
+    <string name="titlePack">Kunzita</string>
+    <string name="buy">Comprar</string>
+    <string name="descGem">¡Cuenta con la versión de Cuarzo! Si desea obtener reportes le invitamos a comprar las siguientes versiones:</string>
 </resources>
